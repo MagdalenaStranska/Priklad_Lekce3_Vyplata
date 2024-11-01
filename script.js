@@ -8,11 +8,16 @@
 // document.body.innerHTML += "<p>" + "Měsíční hrubá mzda: " + hrubaMzda + " Kč" + "</p>"
 
 
-const hodinovaSazba = Number(prompt("Zadej svou hodinovou sazbu v Kč"))
-const pocetHodin = Number(prompt("Zadej delku smeny v hodinach"))
-const pocetDnu = Number(prompt("Zadej pocet odpracovanych dnu"))
-const hrubaMzda = Number(hodinovaSazba*pocetHodin*pocetDnu)
+// const hodinovaSazba = Number(prompt("Zadej svou hodinovou sazbu v Kč"))
+// const pocetHodin = Number(prompt("Zadej delku smeny v hodinach"))
+// const pocetDnu = Number(prompt("Zadej pocet odpracovanych dnu"))
+// const hrubaMzda = Number(hodinovaSazba*pocetHodin*pocetDnu)
 
-document.body.innerHTML += "<p>" + "Měsíční hrubá mzda: " + hrubaMzda + " Kč" + "</p>"
+// document.body.innerHTML += "<p>" + "Měsíční hrubá mzda: " + hrubaMzda + " Kč" + "</p>"
 
 
+const hodinovaSazba = Number(prompt("Jaká je vaše hodinová sazba?"));
+const pocetHodin = Number(prompt("Kolik hodin denně pracujete?"));
+const pocetDni = Number(prompt("Kolik dní měsíčně pracujete?"));
+
+document.body.innerHTML += "<p>Vaše vyplata činí " + (hodinovaSazba*pocetHodin*pocetDni) + " korun</p>";
